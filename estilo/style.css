@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'DM Sans', sans-serif;
+    --fonte3: 'Arvo', serif;
+    --fonte4: 'Sono', sans-serif;
+    --corHNF: #262626;
+    --corBody: #E0E0E0;
+    --coraNav1: #ff0000;
+    --coraNav2: #FFFF33;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #E0E0E0;
+    font-family: var(--fonte1);
+}
+header{
+    text-align: center;
+    background-color: #262626;
+    color: white;
+    min-height: 100px;
+    padding-top: 40px;
+}
+h1{
+    font-family: var(--fonte2);
+    font-weight: 800;
+}
+p{
+    padding-bottom: 20px;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 400px;
+    font-family: var(--fonte3);
+}
+h2{
+    font-family: var(--fonte3);
+    text-align: left;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 27px;
+}
+h3{
+    padding: 5px;
+    font-family: var(--fonte4);
+    border-radius: 12px;
+}
+nav{
+    text-align:center;
+    padding: 10px;
+    background-color: #262626;  
+    align-content: center;
+}
+nav > a{
+    background-color: #ff0000;
+    color: black;
+    font-family: var(--fonte4);
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;   
+    transition-duration: .4s;
+}
+nav :last-child{
+    background-color: #FFFF33;
+}
+nav :hover{
+    background-color: white;
+}
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.249);
+}
+main>p{
+    text-align: justify;
+}
+article > h1{
+    font-family: var(--fonte3);
+    padding: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    font-size: 19px;
+}
+.CaixaImagem{
+    max-width: 400px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+.codigo{
+    white-space:pre-line;
+    border-radius: 12px;
+    padding: 10px;
+    display: inline-block;
+    height: 152;
+    width: 100%;
+}
+.SonicPi{
+    max-width: 700px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:initial;
+    text-align: center;
+    gap: 2em;
+    border-radius: 10px;
+}
+#AudioCode{
+    text-align: center;
+    width: 50%;
+}
+#Spotify{
+    text-align: center;
+}
+#Spotify iframe{
+    padding: 5px;
+}
+.container{
+      max-width: 800px;
+      margin: 0 auto;
+}
+.div-video{
+    width: 100%;
+    padding-top: 60%;
+    position: relative;
+}
+.div-video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.Caixalogos{
+    max-width: 100px;
+}
+.logos{
+    display: flex ;
+    align-items: center ;
+}
+
+.logos li{
+    list-style-type: none ;
+}
+footer{
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-weight: 0.8em;
+    padding: 5px;
+}

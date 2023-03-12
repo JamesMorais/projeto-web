@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A música e suas formas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="fotos/apheLogo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1> A música e suas formas</h1>
+        <p>Em tudo e em todo lugar</p>
+    </header>
+    <nav>
+        <a href="pag002.html" target="_self" rel="next">Playlist</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <main>
+        <article>
+            <h1>
+                Tudo vira música
+            </h1>
+            <p>
+                Música é a ocorrência de uma combinação harmoniosa e expressiva de
+                sons, dessa forma tudo o que ressona pode virar música. Quando se
+                trata do processo criativo, a canção pode acolher sons de diferentes
+                origens e com diferentes significados naquele contexto. No texto
+                abaixo serão apresentadas canções originadas de: códigos de
+                uma linguagem de programação, experimentos
+                físicos e até mesmo da utilização de utensílios de cozinha.
+            </p>
+            <div class="CaixaImagem">
+                <picture>
+                 <source media="(max-width: 800px )" srcset="fotos/bjorkMenorP&B.jpg">
+                 <img src="fotos/bjorkMaiorP&B.jpg" alt="Foto em preto e branco do rosto da artista Björk">
+                </picture>
+            </div>
+            <h2>Sonic Pi</h2>
+            <p>
+                Sonic Pi é um ambiente de codificação ao vivo baseado em Ruby,
+                sendo uma sofisticada ferramenta de software para criar som ou
+                música escrevendo código de computador em tempo real. No exemplo
+                a seguir foi utilizado o código abaixo para reproduzir a intro
+                da música “Pagan poetry” da artista islandesa Björk.
+            </p>
+            <div class="SonicPi">
+                <div id="AudioCode">
+                    <h3>Código feito no Sonic Pi:</h3>
+                    <pre class="codigo">
+                        <code>
+live_loop :PaganPoetry do
+    use_synth :piano
+    play ring(  :Gs1, :Gs1, :A2,  :Cs3,
+                :Fs3, :Gs3, :Cs5, :Cs5,
+                :Cs5, :Cs5, :Cs5, :Cs5,
+                :Cs5, :Cs5, :Cs5, :Cs5,
+                :Gs6, :Gs6, :A6,  :Cs6,
+                :Ds6, :E6,  :GS6, :Cs7,
+                :Ds7, :Cs7, :Ds7, :Cs7,
+                :Ds7, :Cs7, :Ds7, :Gs2)
+    .tick, amp: 0.5
+    sleep 0.22
+end
+                                            </code>
+                    </pre>
+                    <h3>Audio gerado pelo código:</h3>
+                    <audio src="audioMP3/PaganPoetryCodeMp3.mp3" controls ="controls">
+                    </audio>
+                </div>
+                        <div id="Spotify">
+                            <h3>Link da música original:</h3>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Te7GWFEecCGPpkWVTjJ1h?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                            </iframe>
+                        </div>
+            </div>
+            <h2>Bobina de Tesla</h2>
+            <p>
+                A Bobina de Tesla é um transformador ressonante que em
+                frequências altas, consegue produzir grandes valores de
+                tensão! Leigamente falando, a bobina de Tesla é como um raio
+                que pode produzir música. No vídeo abaixo a cantora Björk
+                utilizou deste experimento físico para constituir
+                o instrumental da performance da canção "Thunderbolt"(Raio).
+            </p>
+            <div class="container">
+                <div class="div-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/44doS-uMDvA?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <h2>Prato e Faca</h2>
+            <p>
+                Utensílios de cozinha como prato e faca podem ser
+                utilizados para percussão musical, no trecho do vídeo abaixo
+                Dona Edith do Prato toca “Marinheiro só” composição de Caetano Veloso.
+            </p>
+
+            <div class="container">
+                <div class="div-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6NRyYnJI3Y0?start=42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <aside id="contato">
+                <h2>Contato</h2>
+                <h3>Alguns links para entrar em contato comigo:</h3>
+                <div class="Caixalogos">
+                    <ul class="logos">
+                        <li>
+                            <a href="https://github.com/JamesMorais" target="_blank" rel="external">
+                                <img src="fotos/icons8-github-64.png" alt="Icon do gitHub">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto: capic.2022118tads0048@aluno.ifpi.edu.br">
+                                <img src="fotos/icons8-mail-60.png" alt="Icon do email">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/hurricane.s2?igshid=YmMyMTA2M2Y=" target="_blank" rel="external">
+                                <img src="fotos/icons8-instagram-64.png" alt="Icon do instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por James Morais</p>
+    </footer>
+</body>
+</html>
